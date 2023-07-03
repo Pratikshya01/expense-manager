@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Expense Manager</title>
+  </head>
+  <body>
+    <main class="app">
+      <h1 class="app__title">Expense Manager</h1>
+
+      <div class="app__expense--details">
+        <div class="expense__detail">
+          <h2 class="expense__detail--heading">Income</h2>
+          <p class="expense__detail--amount income">
+            &#8377;<span id="total-income">0</span>
+          </p>
+        </div>
+
+        <div class="expense__detail">
+          <h2 class="expense__detail--heading">Expense</h2>
+          <p class="expense__detail--amount expense">
+            &#8377;<span id="total-expense">0</span>
+          </p>
+        </div>
+
+        <div class="expense__detail">
+          <h2 class="expense__detail--heading">Balance</h2>
+          <p class="expense__detail--amount balance">
+            &#8377;<span id="total-balance">0</span>
+          </p>
+        </div>
+      </div>
+
+      <form class="app__form" id="expense-form">
+        <input type="text" id="title-input" placeholder="Enter Title" />
+        <input type="text" id="amount-input" placeholder="Enter Amount" />
+        <button type="submit" class="submit__btn">Add</button>
+      </form>
+
+      <ul id="expense-list" class="app__expense--list">
+        <!-- <li class="expense__item">
+          <div class="expense__left">
+            <div class="expense__date">
+              <p class="day">13</p>
+              <p class="month">May</p>
+              <p class="year">2023</p>
+            </div>
+            <p class="expense__title">Expense Title</p>
+          </div>
+
+          <p class="expense__amount expense">-&#8377;2000</p>
+        </li> -->
+      </ul>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
